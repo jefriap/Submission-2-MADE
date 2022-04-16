@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Film Catalogue</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="catalogue">Catalogue</string>
+    <string name="judul_film">Judul film</string>
+    <string name="poster_image">Poster Image</string>
+    <string name="text_genre">Action, Advanture, Fiction, comedy, family</string>
+    <string name="text_date">01/01/2021</string>
+    <string name="text_rating">9.5</string>
+    <string name="movies">Movies</string>
+    <string name="tv_show">Tv Show</string>
+    <string name="detail_film">Detail Film</string>
+    <string name="overview">Overview</string>
+    <string name="netflim">NETFLIM</string>
+    <string name="image_backdrop">Image Backdrop</string>
+    <string name="menu_sort_ascending">A - Z</string>
+    <string name="menu_sort_descending">Z - A</string>
+    <string name="fav_icon">fav icon</string>
+    <string name="favorite">Favorite</string>
+    <string name="back_button">Back Button</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="blm_tersedia">Blm Tersedia</string>
+    <string name="terjadi_kesalahan">Terjadi kesalahan</string>
+    <string name="random">Random</string>
+    <string name="terbaru">Terbaru</string>
+    <string name="judul">Judul</string>
+    <string name="rating">Rating</string>
+</resources>

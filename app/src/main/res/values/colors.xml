@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Costum Color -->
+    <color name="colorPrimary">#1A4066</color>
+    <color name="colorPrimaryNight">#282828</color>
+    <color name="item_row_light">#FFFFFF</color>
+    <color name="item_row_night">#373636</color>
+    <color name="colorShade">#DDDDDD</color>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="itemRowColor" format="reference"/>
+    <attr name="textSplash" format="reference"/>
+    <attr name="colorTab" format="reference"/>
+</resources>

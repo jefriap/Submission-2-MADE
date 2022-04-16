@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="180dp"
+    android:layout_height="332dp"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="8dp"
+    android:backgroundTint="?attr/itemRowColor"
+    android:layout_gravity="top|center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="5dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|top"
+                    tools:src="@color/colorShade"
+                    android:background="@color/colorShade"
+                    android:contentDescription="@string/poster_image"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center|bottom"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:background="#9F000000">
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="16dp"
+                        android:background="@color/colorShade"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:background="@color/colorShade"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="1dp"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:background="@color/colorShade"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="70dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/colorShade"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvRating"/>
+
+
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="50dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/colorShade"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvDate"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

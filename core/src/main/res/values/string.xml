@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="blm_tersedia">Blm Tersedia</string>
+    <string name="terjadi_kesalahan">Terjadi kesalahan</string>
+    <string name="judul_film">Judul film</string>
+    <string name="poster_image">Poster Image</string>
+    <string name="text_genre">Action, Advanture, Fiction, comedy, family</string>
+    <string name="text_date">01/01/2021</string>
+    <string name="text_rating">9.5</string>
+</resources>
