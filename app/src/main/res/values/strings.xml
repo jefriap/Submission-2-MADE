@@ -13,8 +13,6 @@
     <string name="overview">Overview</string>
     <string name="netflim">NETFLIM</string>
     <string name="image_backdrop">Image Backdrop</string>
-    <string name="menu_sort_ascending">A - Z</string>
-    <string name="menu_sort_descending">Z - A</string>
     <string name="fav_icon">fav icon</string>
     <string name="favorite">Favorite</string>
     <string name="back_button">Back Button</string>
@@ -25,4 +23,5 @@
     <string name="terbaru">Terbaru</string>
     <string name="judul">Judul</string>
     <string name="rating">Rating</string>
+    <string name="logo_splash">Logo Splash</string>
 </resources>

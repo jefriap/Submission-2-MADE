@@ -61,6 +61,11 @@ class TvShowFragment : Fragment() {
         }
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             com.jefriap.submission2made.R.id.action_title -> sort = SortUtils.TITLE
