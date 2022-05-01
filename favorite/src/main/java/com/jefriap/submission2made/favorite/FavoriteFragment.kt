@@ -19,6 +19,8 @@ class FavoriteFragment : Fragment() {
     private var _binding: FragmentFavoriteBinding? = null
     private val binding get() = _binding
 
+    private var mediator: TabLayoutMediator? = null
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -34,15 +36,27 @@ class FavoriteFragment : Fragment() {
         val sectionPagerAdapter = SectionsPagerFavoriteAdapter(requireActivity())
         val viewPager: ViewPager2? = binding?.viewPager
         viewPager?.adapter = sectionPagerAdapter
+        viewPager?.isSaveEnabled = false
 
         loadKoinModules(favoriteModule)
 
         val tabs: TabLayout? = binding?.tabs
         if (tabs != null && viewPager != null) {
-            TabLayoutMediator(tabs, viewPager) { tab, position ->
+            mediator = TabLayoutMediator(tabs, viewPager) { tab, position ->
                 tab.text = resources.getString(TAB_TILES[position])
-            }.attach()
+            }
+
+            mediator?.attach()
         }
+
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        mediator?.detach()
+        mediator = null
+        binding?.viewPager?.adapter = null
+        _binding = null
     }
 
     companion object {

@@ -17,7 +17,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:tint="?attr/textSplash" />
+        app:tint="?attr/textSplash"
+        android:contentDescription="@string/logo_splash" />
 
     <TextView
         android:id="@+id/netflim"
